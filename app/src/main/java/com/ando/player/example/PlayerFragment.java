@@ -1,17 +1,22 @@
-package com.ando.player;
+package com.ando.player.example;
 
+import android.app.Activity;
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.ando.player.ext.TabletTitleView;
-import com.ando.player.ext.TabletVodControlView;
+import com.ando.player.R;
+import com.ando.player.VideoBean;
+import com.ando.player.ext.TabletOriginTitleView;
+import com.ando.player.ext.TabletOriginVodControlView;
 import com.bumptech.glide.Glide;
 import com.dueeeke.videocontroller.StandardVideoController;
 import com.dueeeke.videocontroller.component.CompleteView;
@@ -21,12 +26,13 @@ import com.dueeeke.videocontroller.component.LiveControlView;
 import com.dueeeke.videocontroller.component.PrepareView;
 import com.dueeeke.videoplayer.player.VideoView;
 
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 /**
- * Title:
+ * Title: 通用
  * <p>
  * Description:
  * </p>
@@ -36,14 +42,14 @@ import androidx.fragment.app.Fragment;
  */
 public class PlayerFragment extends Fragment {
 
-    private MainActivity activity;
+    private Activity activity;
     private VideoView mVideoView;
     private StandardVideoController mController;
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        activity = (MainActivity) context;
+        activity = (Activity) context;
     }
 
     @Nullable
@@ -57,6 +63,7 @@ public class PlayerFragment extends Fragment {
     private void initPlayerView(View view) {
 
         mVideoView = view.findViewById(R.id.videoView);
+        adaptCutoutAboveAndroidP();
 
         final VideoBean videoBean = new VideoBean("预告片8",
                 "https://cms-bucket.nosdn.127.net/cb37178af1584c1588f4a01e5ecf323120180418133127.jpeg",
@@ -77,7 +84,7 @@ public class PlayerFragment extends Fragment {
 
         mController.addControlComponent(new ErrorView(activity));//错误界面
 
-        TabletTitleView titleView = new TabletTitleView(activity);//标题栏
+        TabletOriginTitleView titleView = new TabletOriginTitleView(activity);//标题栏
         mController.addControlComponent(titleView);
 
         //根据是否为直播设置不同的底部控制条
@@ -86,7 +93,7 @@ public class PlayerFragment extends Fragment {
         if (isLive) {
             mController.addControlComponent(new LiveControlView(activity));//直播控制条
         } else {
-            TabletVodControlView vodControlView = new TabletVodControlView(activity);//点播控制条
+            TabletOriginVodControlView vodControlView = new TabletOriginVodControlView(activity);//点播控制条
             //是否显示底部进度条。默认显示
 //                vodControlView.showBottomProgress(false);
             mController.addControlComponent(vodControlView);
@@ -119,6 +126,7 @@ public class PlayerFragment extends Fragment {
         //如果你不想要UI，不要设置控制器即可
         mVideoView.setVideoController(mController);
 
+        mVideoView.setScreenScaleType(VideoView.SCREEN_SCALE_16_9);
         mVideoView.addOnStateChangeListener(mOnStateChangeListener);
         mVideoView.setUrl(videoBean.getUrl());
 
@@ -233,11 +241,12 @@ public class PlayerFragment extends Fragment {
     }
 
     public void onPlayerBackPressed() {
+
         if (mVideoView != null) {
 
             if (mController.isLocked()) {
                 mController.show();
-                Toast.makeText(activity, R.string.dkplayer_lock_tip, Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity, R.string.tablet_lock_tip, Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -250,5 +259,14 @@ public class PlayerFragment extends Fragment {
 
         activity.finish();
     }
+
+    private void adaptCutoutAboveAndroidP() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            WindowManager.LayoutParams lp = activity.getWindow().getAttributes();
+            lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+            activity.getWindow().setAttributes(lp);
+        }
+    }
+
 
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="oval">
+            <solid android:color="@color/color_tablet_player_theme" />
+            <size
+                android:width="@dimen/tablet_controller_seekbar_size_n"
+                android:height="@dimen/tablet_controller_seekbar_size_n" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="oval">
+                <solid android:color="@android:color/white" />
+                <size
+                    android:width="@dimen/tablet_controller_seekbar_size_inner"
+                    android:height="@dimen/tablet_controller_seekbar_size_inner" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

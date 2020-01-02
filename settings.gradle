@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':ando_player_ui'
 rootProject.name='DemoPad'

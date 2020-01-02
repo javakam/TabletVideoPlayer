@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_tablet_player_theme">#FFAC03</color>
+    <color name="color_tablet_player_theme_translucent">#eeFFAC03</color>
+    <color name="color_tablet_player_background_color">#4D000000</color>
+</resources>

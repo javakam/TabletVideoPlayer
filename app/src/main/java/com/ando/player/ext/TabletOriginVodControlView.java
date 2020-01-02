@@ -22,16 +22,16 @@ import androidx.annotation.Nullable;
  * @author Changbao
  * @date 2020/1/2  10:55
  */
-public class TabletVodControlView extends VodControlView {
-    public TabletVodControlView(@NonNull Context context) {
+public class TabletOriginVodControlView extends VodControlView {
+    public TabletOriginVodControlView(@NonNull Context context) {
         super(context);
     }
 
-    public TabletVodControlView(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public TabletOriginVodControlView(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public TabletVodControlView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public TabletOriginVodControlView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

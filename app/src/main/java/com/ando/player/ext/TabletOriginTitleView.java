@@ -22,7 +22,7 @@ import androidx.annotation.Nullable;
  * @author Changbao
  * @date 2020/1/2  10:47
  */
-public class TabletTitleView extends TitleView {
+public class TabletOriginTitleView extends TitleView {
     private ControlWrapper controlWrapper;
 
     @Override
@@ -31,15 +31,15 @@ public class TabletTitleView extends TitleView {
         this.controlWrapper = controlWrapper;
     }
 
-    public TabletTitleView(@NonNull Context context) {
+    public TabletOriginTitleView(@NonNull Context context) {
         super(context);
     }
 
-    public TabletTitleView(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public TabletOriginTitleView(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public TabletTitleView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public TabletOriginTitleView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
     }

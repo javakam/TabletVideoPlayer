@@ -7,10 +7,34 @@
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:layout_width="150dp"
+    <LinearLayout
+        android:layout_width="160dp"
         android:layout_height="match_parent"
-        android:background="#eee" />
+        android:background="#eee"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="通用" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="直接全屏" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="自定义样式" />
+
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/container"

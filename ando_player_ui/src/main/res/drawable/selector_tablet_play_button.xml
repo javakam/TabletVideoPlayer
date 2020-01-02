@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true" android:drawable="@drawable/ic_tablet_action_pause"/>
+<!--    <item android:drawable="@drawable/ic_tablet_action_play_arrow"/>-->
+    <item android:drawable="@drawable/ic_player_cover"/>
+
+<!--    <item android:state_selected="true" android:drawable="@drawable/ic_player_playing"/>-->
+<!--    <item android:drawable="@drawable/ic_player_normal"/>-->
+
+</selector>

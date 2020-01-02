@@ -4,8 +4,8 @@
 - 基于 DKVideoPlayer
 
 
-### Apk
-
+### 下载 Apk
+<https://raw.githubusercontent.com/javakam/TabletVideoPlayer/master/app-tablet-player.apk>
 
 ### 截图
 

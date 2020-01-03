@@ -1,4 +1,4 @@
-package com.ando.player.ui.component;
+package com.ando.player.ui.tablet.component;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -9,13 +9,13 @@ import android.view.ViewConfiguration;
 import android.view.animation.Animation;
 import android.widget.LinearLayout;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.ando.player.ui.R;
+import com.ando.player.ui.tablet.R;
 import com.dueeeke.videoplayer.controller.ControlWrapper;
 import com.dueeeke.videoplayer.controller.IControlComponent;
 import com.dueeeke.videoplayer.player.VideoView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * 播放出错提示界面

@@ -1,4 +1,4 @@
-package com.ando.player.ui.component;
+package com.ando.player.ui.tablet.component;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -13,13 +13,13 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.ando.player.ui.R;
+import com.ando.player.ui.tablet.R;
 import com.dueeeke.videoplayer.controller.ControlWrapper;
 import com.dueeeke.videoplayer.controller.IGestureComponent;
 import com.dueeeke.videoplayer.player.VideoView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import static com.dueeeke.videoplayer.util.PlayerUtils.stringForTime;
 

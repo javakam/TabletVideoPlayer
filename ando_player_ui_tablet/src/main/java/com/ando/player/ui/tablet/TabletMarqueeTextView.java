@@ -1,4 +1,4 @@
-package com.ando.player.ui;
+package com.ando.player.ui.tablet;
 
 import android.content.Context;
 import android.util.AttributeSet;

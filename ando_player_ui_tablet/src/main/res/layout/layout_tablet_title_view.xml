@@ -21,7 +21,7 @@
             android:padding="@dimen/tablet_controller_icon_padding"
             android:src="@drawable/ic_tablet_action_arrow_back" />
 
-        <com.ando.player.ui.TabletMarqueeTextView
+        <com.ando.player.ui.tablet.TabletMarqueeTextView
             android:id="@+id/title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

@@ -1,4 +1,4 @@
-package com.ando.player.ui;
+package com.ando.player.ui.tablet;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
@@ -11,21 +11,21 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import androidx.annotation.AttrRes;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.ando.player.ui.component.TabletCompleteView;
-import com.ando.player.ui.component.TabletErrorView;
-import com.ando.player.ui.component.TabletGestureView;
-import com.ando.player.ui.component.TabletLiveControlView;
-import com.ando.player.ui.component.TabletPrepareView;
-import com.ando.player.ui.component.TabletTitleView;
-import com.ando.player.ui.component.TabletVodControlView;
+import com.ando.player.ui.tablet.component.TabletCompleteView;
+import com.ando.player.ui.tablet.component.TabletErrorView;
+import com.ando.player.ui.tablet.component.TabletGestureView;
+import com.ando.player.ui.tablet.component.TabletLiveControlView;
+import com.ando.player.ui.tablet.component.TabletPrepareView;
+import com.ando.player.ui.tablet.component.TabletTitleView;
+import com.ando.player.ui.tablet.component.TabletVodControlView;
 import com.dueeeke.videoplayer.controller.GestureVideoController;
 import com.dueeeke.videoplayer.player.VideoView;
 import com.dueeeke.videoplayer.util.L;
 import com.dueeeke.videoplayer.util.PlayerUtils;
+
+import androidx.annotation.AttrRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * 直播/点播控制器

@@ -1,4 +1,4 @@
-package com.ando.player.ui.custom;
+package com.ando.player.ui.tablet.custom;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -9,14 +9,14 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.ando.player.ui.R;
+import com.ando.player.ui.tablet.R;
 import com.dueeeke.videoplayer.controller.ControlWrapper;
 import com.dueeeke.videoplayer.controller.IControlComponent;
 import com.dueeeke.videoplayer.player.VideoView;
 import com.dueeeke.videoplayer.player.VideoViewManager;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * 准备播放界面

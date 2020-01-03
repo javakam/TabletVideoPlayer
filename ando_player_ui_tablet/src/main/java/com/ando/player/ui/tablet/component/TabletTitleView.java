@@ -1,4 +1,4 @@
-package com.ando.player.ui.component;
+package com.ando.player.ui.tablet.component;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -16,15 +16,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.ando.player.ui.TabletMarqueeTextView;
-import com.ando.player.ui.R;
+import com.ando.player.ui.tablet.R;
+import com.ando.player.ui.tablet.TabletMarqueeTextView;
 import com.dueeeke.videoplayer.controller.ControlWrapper;
 import com.dueeeke.videoplayer.controller.IControlComponent;
 import com.dueeeke.videoplayer.player.VideoView;
 import com.dueeeke.videoplayer.util.PlayerUtils;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * 播放器顶部标题栏

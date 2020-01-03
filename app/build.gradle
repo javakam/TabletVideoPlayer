@@ -33,7 +33,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     //自定义效果
-    implementation project(':ando_player_ui')
+    implementation project(':ando_player_ui_tablet')
     implementation 'com.github.dueeeke.dkplayer:dkplayer-java:3.2.2'
     implementation 'com.github.dueeeke.dkplayer:dkplayer-ui:3.2.2'
 //    implementation 'com.github.dueeeke.dkplayer:player-exo:3.2.2'

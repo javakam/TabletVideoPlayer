@@ -20,20 +20,16 @@ import androidx.fragment.app.Fragment;
 
 import com.ando.player.R;
 import com.ando.player.VideoBean;
-import com.ando.player.ui.TabletStandardVideoController;
-import com.ando.player.ui.component.TabletCompleteView;
-import com.ando.player.ui.component.TabletErrorView;
-import com.ando.player.ui.component.TabletGestureView;
-import com.ando.player.ui.component.TabletLiveControlView;
-import com.ando.player.ui.component.TabletPrepareView;
-import com.ando.player.ui.component.TabletTitleView;
-import com.ando.player.ui.component.TabletVodControlView;
+import com.ando.player.ui.tablet.TabletStandardVideoController;
+import com.ando.player.ui.tablet.component.TabletCompleteView;
+import com.ando.player.ui.tablet.component.TabletErrorView;
+import com.ando.player.ui.tablet.component.TabletGestureView;
+import com.ando.player.ui.tablet.component.TabletLiveControlView;
+import com.ando.player.ui.tablet.component.TabletPrepareView;
+import com.ando.player.ui.tablet.component.TabletTitleView;
+import com.ando.player.ui.tablet.component.TabletVodControlView;
 import com.bumptech.glide.Glide;
 import com.dueeeke.videoplayer.player.VideoView;
-
-import java.util.Locale;
-
-import static com.dueeeke.videoplayer.util.PlayerUtils.stringForTime;
 
 /**
  * Title: 自定义样式
